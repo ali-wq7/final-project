@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d8fc71">
+  <meta name="description" content="لُبس — ملابس يومية، على ذوقك وعلى راحتك.">
+  <title>لُبس | ملابس يومية</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d8fc71'/%3E%3Cpath d='M10 8v16h13v-4h-9V8z' fill='%23191919'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-bag" viewBox="0 0 24 24">
+      <path d="M5 7h14l1 14H4L5 7ZM8 8V6a4 4 0 0 1 8 0v2" />
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M20 5a5 5 0 0 0-7 0l-1 1-1-1a5 5 0 0 0-7 7l8 8 8-8a5 5 0 0 0 0-7Z" />
+    </symbol>
+    <symbol id="i-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M20 14A9 9 0 0 1 10 3a9 9 0 1 0 10 11Z" />
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="10" cy="10" r="6" />
+      <path d="m15 15 6 6" />
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" />
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" />
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" />
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#collection" data-i18n="skip">انتقل إلى المنتجات</a>
+  <p class="announcement" data-i18n="promo">شحن مجاني للطلبات من ٣٠٠ ر.س</p>
+  <header class="page site-header d-flex align-items-center justify-content-between flex-wrap">
+    <a class="brand" href="#" aria-label="LUBS"><span class="brand-mark" aria-hidden="true">L</span><span
+        class="brand-name" data-i18n="brand">لُبس.</span></a>
+    <nav class="main-nav d-flex"><a href="#collection" data-nav="all" data-i18n="shop" aria-current="page">تسوق</a><a
+        href="#collection" data-nav="men" data-i18n="men">رجال</a><a href="#collection" data-nav="women"
+        data-i18n="women">نساء</a><a href="#collection" data-nav="sale" data-i18n="sale">التخفيضات</a><button
+        data-info="about" data-i18n="about">عن لُبس</button></nav>
+    <nav class="header-tools d-flex align-items-center gap-1" aria-label="Store controls">
+      <button id="language-toggle" class="language-button" aria-label="Switch to English">EN</button>
+      <button id="theme-toggle" class="icon-button" aria-label="الوضع الداكن"><svg>
+          <use href="#i-moon" />
+        </svg></button>
+      <button id="account-open" class="icon-button" aria-label="الحساب"><svg>
+          <use href="#i-user" />
+        </svg></button>
+      <button id="favorites-open" class="icon-button" aria-label="المفضلة" aria-pressed="false"><svg>
+          <use href="#i-heart" />
+        </svg><span id="favorite-count" class="mini-count" hidden>0</span></button>
+      <button id="cart-open" class="bag-button" aria-label="السلة"><svg>
+          <use href="#i-bag" />
+        </svg><span id="cart-count" class="count">0</span></button>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <section class="hero-copy">
+        <p class="eyebrow" data-i18n="heroLabel">أساسيات لُبس / ٢٠٢٦</p>
+        <h1 id="hero-title"><span data-i18n="heroOne">قطع بسيطة.</span><br><em data-i18n="heroTwo">إطلالة تشبهك.</em>
+        </h1>
+        <p data-i18n="heroDescription">اختيارات يومية، سهلة التنسيق وعلى راحتك.</p><a class="btn brand-button"
+          href="#collection" data-i18n="discover">تسوق المجموعة</a><span class="hero-signature" data-i18n="tagline">على
+          ذوقك. على راحتك.</span>
+      </section>
+      <figure class="hero-photo"><img src="assets/product-4.jpg" alt="هودي أبيض معلق بدون أشخاص" data-alt="heroAlt"
+          width="600" height="800" fetchpriority="high">
+        <figcaption><span class="brand-mark small" aria-hidden="true">L</span><span data-i18n="edit">اختيارات كل
+            يوم</span></figcaption>
+      </figure>
+    </section>
+    <p class="service-line"><span data-i18n="shippingShort">شحن مجاني من ٣٠٠ ر.س</span><span
+        data-i18n="returnShort">استبدال خلال ١٤ يومًا</span><span data-i18n="carefully">قطع مختارة بعناية</span></p>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <header class="collection-heading d-flex align-items-center justify-content-between flex-wrap gap-3">
+        <section>
+          <p class="eyebrow" data-i18n="collectionLabel">خزانتك، بطريقتك</p>
+          <h2 id="collection-title" data-i18n="collectionTitle">اختياراتك اليومية.</h2>
+        </section><button id="api-refresh" class="btn outline-button" data-i18n="refresh">تحديث المنتجات</button>
+      </header>
+      <section class="shop-controls d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <nav class="filters d-flex gap-2 flex-wrap" aria-label="Product categories"><button data-filter="all"
+            class="active" aria-pressed="true" data-i18n="all">الكل</button><button data-filter="men"
+            aria-pressed="false" data-i18n="men">رجال</button><button data-filter="women" aria-pressed="false"
+            data-i18n="women">نساء</button><button data-filter="sale" aria-pressed="false"
+            data-i18n="sale">التخفيضات</button></nav>
+        <section class="search-sort d-flex gap-2"><label class="search-field"><svg aria-hidden="true">
+              <use href="#i-search" />
+            </svg><span class="visually-hidden" data-i18n="search">البحث</span><input id="search" type="search"
+              data-placeholder="searchPlaceholder" placeholder="ابحث عن قطعة..." autocomplete="off"></label><label><span
+              class="visually-hidden" data-i18n="sort">ترتيب المنتجات</span><select id="sort" class="form-select">
+              <option value="featured" data-i18n="featured">المختارة لك</option>
+              <option value="low" data-i18n="low">الأقل سعرًا</option>
+              <option value="high" data-i18n="high">الأعلى سعرًا</option>
+              <option value="name" data-i18n="nameSort">الاسم</option>
+            </select></label></section>
+      </section>
+      <p class="catalog-status"><span id="results-count" role="status"></span><span id="api-status"
+          role="status"></span></p>
+      <section id="product-grid" class="product-grid d-flex flex-wrap"></section>
+      <section id="empty-state" class="empty-state" hidden>
+        <h3 data-i18n="emptyTitle">لا توجد قطع مطابقة</h3>
+        <p data-i18n="emptyText">جرّب بحثًا مختلفًا أو تصفح المجموعة.</p><button id="reset-filters"
+          class="btn brand-button" data-i18n="reset">عرض الكل</button>
+      </section>
+      <noscript>Enable JavaScript to browse the store.</noscript>
+    </section>
+  </main>
+  <footer class="page site-footer d-flex align-items-center justify-content-between flex-wrap gap-3"><a class="brand"
+      href="#"><span class="brand-mark small" aria-hidden="true">L</span><span class="brand-name"
+        data-i18n="brand">لُبس.</span></a>
+    <p data-i18n="tagline">على ذوقك. على راحتك.</p>
+    <section class="footer-links d-flex gap-3"><button data-info="shipping" data-i18n="shippingPolicy">الشحن
+        والاستبدال</button><small data-i18n="copyright">© ٢٠٢٦ لُبس</small></section>
+  </footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><button id="dialog-close" class="icon-button close-button"
+      aria-label="إغلاق"><svg>
+        <use href="#i-close" />
+      </svg></button>
+    <section id="dialog-body"></section>
+  </dialog>
+  <p id="notice" class="notice" role="status" aria-live="polite"></p>
+</body>
+
+</html>
